@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Hello World!" />
+  <Content type="html">
+    <![CDATA[
+      
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script type="text/javascript">
+function change(url,txt) 
+{document.getElementById('large').style.backgroundImage='url('+url+')';
+document.getElementById('desc').innerHTML=''+txt+'';}
+</script>
+<style type="text/css">
+body {margin:0; padding:0;}
+#large {
+width:856px; height:640px; padding:10px;  /* The width and height values should be equal to the largest width and height values in your images. */
+background:#000000 url(https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG) no-repeat center;}
+#thumbs {width:876px; height:167px;  /* i.e. 120px thumbnails height + 15px padding + 17px scrollbar height */
+background:#000000; white-space:nowrap; overflow-x:auto; overflow-y:hidden;}
+#inner {padding:10px; display:inline-block;}
+img {height:120px; margin:5px;}
+#desc {width:876px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+</style>
+<div id="large"></div>  
+<div id="desc">The First Avatar</div>  
+<div id="thumbs">
+<div id="inner">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG','The First Avatar')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/02_meInChicago.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/02_meInChicago.jpg','My Chicago Trip')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/03_meInCedarPoint.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/03_meInCedarPoint.jpg','When I fell in love with Roller Coasters')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/04_meForRafting.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/04_meForRafting.jpg','White Water Rafting')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/05_meInSmoky.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/05_meInSmoky.jpg','Hike in the Smoky Mountains')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/06_meInFall.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/06_meInFall.jpg','Fall Colors')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/07_meInMiami.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/07_meInMiami.jpg','Rainy Day in Miami')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/08_meInVegas.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/08_meInVegas.jpg','Whatever happened in Vegas, loved it')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/09_meBiya.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/09_meBiya.jpg','Wedding Day')">
+<img src="https://sites.google.com/site/paintinbits/writeups/avatars/10_avatarPC.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/10_avatarPC.jpg','Avatar from Project Skin')">
+</div>
+</div>
+
+    ]]>
+  </Content>
+</Module>
