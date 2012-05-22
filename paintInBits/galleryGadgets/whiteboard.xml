@@ -30,7 +30,7 @@ img {width:80px; margin:5px 0 0; display:block;}
 <div id="thumbs">
 <div id="inner">
 <img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg','Eddy')">
-<img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_02.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_02.jpg','Arthas (My Favorite)')">
+<img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_02.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_02.jpg','Arthas - My Favorite')">
 <img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_03.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_03.jpg','Portal')">
 <img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_06.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_06.jpg','Blob')">
 <img src="https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_08a.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboard/Artwork_08a.jpg','Wolverine')">
