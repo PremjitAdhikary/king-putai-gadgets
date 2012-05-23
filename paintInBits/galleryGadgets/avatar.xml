@@ -12,10 +12,11 @@ document.getElementById('desc').innerHTML=''+txt+'';}
 </script>
 <style type="text/css">
 body {margin:0; padding:0;}
+#enclose {width: 800px; height: 620px; float:left;}
 #large {
 width:800px; height:660px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg) no-repeat center; }
 /* The width and height values should be equal to the largest width and height values in your images. */
-#thumbs {width:112px; height:628px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+#thumbs {width:112px; height:660px; background:#000000; overflow-x:hidden; overflow-y:auto; }
 /* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
 #inner {padding:0 5px 5px 10px;}
 img {width:80px; margin:5px 0 0; display:block;}
