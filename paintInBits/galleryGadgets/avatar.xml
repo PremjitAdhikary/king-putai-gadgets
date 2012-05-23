@@ -13,16 +13,18 @@ document.getElementById('desc').innerHTML=''+txt+'';}
 <style type="text/css">
 body {margin:0; padding:0;}
 #large {
-width:856px; height:640px; padding:10px;  /* The width and height values should be equal to the largest width and height values in your images. */
-background:#000000 url(https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG) no-repeat center;}
-#thumbs {width:876px; height:167px;  /* i.e. 120px thumbnails height + 15px padding + 17px scrollbar height */
-background:#000000; white-space:nowrap; overflow-x:auto; overflow-y:hidden;}
-#inner {padding:10px; display:inline-block;}
-img {height:120px; margin:5px;}
-#desc {width:876px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+width:800px; height:660px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg) no-repeat center; }
+/* The width and height values should be equal to the largest width and height values in your images. */
+#thumbs {width:112px; height:628px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
+#inner {padding:0 5px 5px 10px;}
+img {width:80px; margin:5px 0 0; display:block;}
+#desc {width:800px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
 </style>
-<div id="large"></div>  
-<div id="desc">The First Avatar</div>  
+<div id="enclose">
+<div id="large"></div>   
+<div id="desc">Eddy</div> 
+</div>
 <div id="thumbs">
 <div id="inner">
 <img src="https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/avatars/01_me.JPG','The First Avatar')">
