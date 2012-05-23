@@ -14,7 +14,7 @@ document.getElementById('desc').innerHTML=''+txt+'';}
 body {margin:0; padding:0;}
 #enclose {width: 800px; height: 620px; float:left;}
 #large {
-width:800px; height:600px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg) no-repeat center; }
+width:800px; height:600px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/whiteboard/ArtWork_01.jpg) no-repeat center; }
 /* The width and height values should be equal to the largest width and height values in your images. */
 #thumbs {width:112px; height:628px; background:#000000; overflow-x:hidden; overflow-y:auto; }
 /* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
