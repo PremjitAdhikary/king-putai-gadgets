@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Digital Painting" />
+  <Content type="html">
+    <![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script type="text/javascript">
+function change(url,txt) {
+	document.getElementById('large').style.backgroundImage='url('+url+')';
+	document.getElementById('desc').innerHTML=''+txt+'';
+}
+</script>
+<style type="text/css">
+	body {margin:0; padding:0;}
+	#enclose {width: 810px; height: 520px; float:left;}
+	#large {
+	width:800px; height:500px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_1.jpg) no-repeat center; }
+	/* The width and height values should be equal to the largest width and height values in your images. */
+	#thumbs {width:117px; height:548px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+	/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
+	#inner {padding:5px;}
+	img {width:100px; margin:5px; display:block;}
+	#desc {width:810px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+</style>
+<div id="enclose">
+	<div id="large"></div>   
+	<div id="desc">My first landscape on digital brush</div> 
+</div>
+<div id="thumbs">
+	<div id="inner">
+		<img src="https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_1.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_1.jpg','My first landscape on digital brush')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_2.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_2.jpg','Inspired by the Glaciers')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_3.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/landscapes/Landscape_3.jpg','Different Elements')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/moods/Moods_Combo.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/moods/Moods_Combo.jpg','What is Your Favorite Mood?')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_08%28smudgePass3-BG%29.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_08%28smudgePass3-BG%29.jpg','Raise the Dead - Grayscale')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_13%20%28finalTouch%29.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_13%20%28finalTouch%29.jpg','Raise the Dead - Complete')">
+	</div>
+</div>
+
+    ]]>
+  </Content>
+</Module>
