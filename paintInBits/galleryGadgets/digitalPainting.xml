@@ -20,8 +20,9 @@ function change(url,txt) {
 	#thumbs {width:117px; height:548px; background:#000000; overflow-x:hidden; overflow-y:auto; }
 	/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
 	#inner {padding:5px;}
-	img {width:100px; margin:5px; display:block;}
+	img {width:80px; margin:5px; display:block;}
 	#desc {width:810px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+	#paddingtext {width:80px; margin:5px; display:block; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
 </style>
 <div id="enclose">
 	<div id="large"></div>   
@@ -35,6 +36,7 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/moods/Moods_Combo.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/moods/Moods_Combo.jpg','What is Your Favorite Mood?')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_08%28smudgePass3-BG%29.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_08%28smudgePass3-BG%29.jpg','Raise the Dead - Grayscale')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_13%20%28finalTouch%29.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/raisethedead/warcraft_13%20%28finalTouch%29.jpg','Raise the Dead - Complete')">
+		<div id="paddingtext">Stop clicking. There are no more images to view...<br>Seriously, stop clicking in this area</div>
 	</div>
 </div>
 
