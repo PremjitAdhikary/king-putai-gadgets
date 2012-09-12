@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Whiteboard" />
+  <Content type="html">
+    <![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script type="text/javascript">
+var bookmark = 0;
+var pageUrls = new Array(
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p04.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p05.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p06.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p07.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p08.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p09.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p10.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p11.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p12.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p13.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p14.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p15.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p16.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p17.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p18.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p19.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p20.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p21.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p22.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p23.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p24.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p25.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p26.tif"
+);
+function prev(){
+	if(bookmark!=0){
+		bookmark--;
+		updateScreen();
+	}
+	//else{alert('start>'+bookmark);}
+}
+function next(){
+	if(bookmark!=(pageUrls.length-1)){
+		bookmark++;
+		updateScreen();
+	}
+	//else{alert('end>'+bookmark);}
+}
+function gotoPage(){
+	var gohere=document.getElementById('goTxt').value;
+	if(gohere>0 && gohere<=pageUrls.length){
+		bookmark=gohere-1;
+		updateScreen();
+	}
+}
+function updateScreen(){
+	document.getElementById('screen').style.backgroundImage='url('+pageUrls[bookmark]+')';
+	document.getElementById('goTxt').value=bookmark+1;
+}
+</script>
+<style type="text/css">
+	body {margin:0; padding:0;}
+	#enclose {width: 940px; height: 1260px;}
+	#screen {width:840px; height:1260px; padding:0px; float:left; background:#000000
+		url(https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif) no-repeat center; }
+	#prev {width:50px; height:1260px; padding:0px; float:left; }
+	#next {width:50px; height:1260px; padding:0px; float:left; }
+	#goto {width:840px; padding:0px; text-align:center; }
+</style>
+<div id="goto">Page 
+	<input type="text" name="goTxt" id="goTxt" maxlength="2" value="1" style="width:30px;">
+	<input type="button" value="Go" onclick="gotoPage()">
+</div>
+<div id="enclose">
+	<div id="prev"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/prev.jpg" onclick="prev()"></div>
+	<div id="screen"></div>   
+	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" onclick="next()"></div>
+</div>
+    ]]>
+  </Content>
+</Module>
