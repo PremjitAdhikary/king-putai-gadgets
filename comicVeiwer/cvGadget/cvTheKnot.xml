@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Whiteboard" />
+  <ModulePrefs title="The Knot" />
   <Content type="html">
     <![CDATA[
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script type="text/javascript">
+//to hold the current page number
 var bookmark = 0;
+//holds the urls for all the pages, set them up as the order of pages to appear
 var pageUrls = new Array(
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p04.tif",
@@ -48,6 +50,7 @@ function next(){
 	//else{alert('end>'+bookmark);}
 }
 function gotoPage(){
+	//which page togo
 	var gohere=document.getElementById('goTxt').value;
 	if(gohere>0 && gohere<=pageUrls.length){
 		bookmark=gohere-1;
