@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="The Knot" />
+  <ModulePrefs title="The Knot - Comic Viewer" />
   <Content type="html">
     <![CDATA[
 
@@ -49,17 +49,28 @@ function next(){
 	}
 	//else{alert('end>'+bookmark);}
 }
-function gotoPage(){
+function gotoPage(whichTB){
 	//which page togo
-	var gohere=document.getElementById('goTxt').value;
-	if(gohere>0 && gohere<=pageUrls.length){
-		bookmark=gohere-1;
+	var gohere = (whichTB == 1)?document.getElementById('goTxt').value:document.getElementById('goTxtBelow').value;
+	if(gohere>0 && gohere<pageUrls.length){
+		bookmark=gohere;
 		updateScreen();
 	}
 }
+function gotoFirst(){
+	//go to cover
+	bookmark=0;
+	updateScreen();
+}
+function gotoLast(){
+	//go to end
+	bookmark=pageUrls.length-1;
+	updateScreen();
+}
 function updateScreen(){
 	document.getElementById('screen').style.backgroundImage='url('+pageUrls[bookmark]+')';
-	document.getElementById('goTxt').value=bookmark+1;
+	document.getElementById('goTxt').value=bookmark;
+	document.getElementById('goTxtBelow').value=bookmark;
 }
 </script>
 <style type="text/css">
@@ -69,16 +80,32 @@ function updateScreen(){
 		url(https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif) no-repeat center; }
 	#prev {width:50px; height:1260px; padding:0px; float:left; }
 	#next {width:50px; height:1260px; padding:0px; float:left; }
-	#goto {width:840px; padding:0px; text-align:center; }
+	#goto {width:940px; padding:0px; text-align:center; color:white; background:#000000}
+	#gotobelow {width:940px; padding:0px; text-align:center; color:white; background:#000000}
 </style>
-<div id="goto">Page 
-	<input type="text" name="goTxt" id="goTxt" maxlength="2" value="1" style="width:30px;">
-	<input type="button" value="Go" onclick="gotoPage()">
+<div id="goto">
+	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="Prev" onclick="prev()">
+	Page 
+	<input type="text" name="goTxt" id="goTxt" maxlength="2" value="0" style="width:20px;">
+	<input type="button" value="Go" onclick="gotoPage(1)">
+	<input type="button" value="Next" onclick="next()">
+	<input type="button" value="Last" onclick="gotoLast()"><br>To Navigate: use buttons/sidebars or text+'Go' button
 </div>
 <div id="enclose">
 	<div id="prev"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/prev.jpg" onclick="prev()"></div>
-	<div id="screen"></div>   
+	<div id="screen"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/transparent.gif" 
+			style="width:840px; height:1260px;"></div>   
 	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" onclick="next()"></div>
+</div>
+<div id="gotobelow">
+	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="Prev" onclick="prev()">
+	Page 
+	<input type="text" name="goTxt" id="goTxtBelow" maxlength="2" value="0" style="width:20px;">
+	<input type="button" value="Go" onclick="gotoPage(2)">
+	<input type="button" value="Next" onclick="next()">
+	<input type="button" value="Last" onclick="gotoLast()">
 </div>
     ]]>
   </Content>
