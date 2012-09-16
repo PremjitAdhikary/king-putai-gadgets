@@ -10,6 +10,9 @@
 var bookmark = 0;
 //holds the urls for all the pages, set them up as the order of pages to appear
 var pageUrls = new Array(
+	"https://sites.google.com/site/kingputaistoragea01/home/files/cover.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p01.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p02.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p04.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p05.tif",
@@ -33,7 +36,42 @@ var pageUrls = new Array(
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p23.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p24.tif",
 	"https://sites.google.com/site/kingputaistoragea01/home/files/p25.tif",
-	"https://sites.google.com/site/kingputaistoragea01/home/files/p26.tif"
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p26.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p27.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p28.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p29.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p30.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p31.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p32.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p33.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p34.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p35.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p36.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p37.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p38.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p39.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p40.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p41.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p42.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p43.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p44.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p45.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p46.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p47.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p48.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p49.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p50.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p51.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p52.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p53.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p54.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p55.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p56.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p57.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p58.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p59.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p60.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/backCover.tif"
 );
 function prev(){
 	if(bookmark!=0){
