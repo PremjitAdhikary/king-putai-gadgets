@@ -115,7 +115,7 @@ function updateScreen(){
 	body {margin:0; padding:0;}
 	#enclose {width: 940px; height: 1260px;}
 	#screen {width:840px; height:1260px; padding:0px; float:left; background:#000000
-		url(https://sites.google.com/site/kingputaistoragea01/home/files/p03.tif) no-repeat center; }
+		url(https://sites.google.com/site/kingputaistoragea01/home/files/cover.tif) no-repeat center; }
 	#prev {width:50px; height:1260px; padding:0px; float:left; }
 	#next {width:50px; height:1260px; padding:0px; float:left; }
 	#goto {width:940px; padding:0px; text-align:center; color:white; background:#000000}
