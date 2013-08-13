@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="js/mainAI.js"></script>
 	<script type="text/javascript">
 		function onButtonSubmitHere(){
+			alert('hehe');
 			processMove(
 				document.getElementById('box1').value*100 + 
 				document.getElementById('box2').value*10 + 
