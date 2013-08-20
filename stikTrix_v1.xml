@@ -4,7 +4,36 @@
   <Content type="html">
     <![CDATA[
 	
-	<script type="text/javascript" src="/js/mainAI.js"></script>
+	<div id="opArea">
+		<table border="0" align="center">
+			<tr>
+			<td align="center"><input type="text" id="box1" value="3" disabled style="width:20px" maxlength="1" /></td>
+			<td align="center"><input type="text" id="box2" value="5" disabled style="width:20px" maxlength="1" /></td>
+			<td align="center"><input type="text" id="box3" value="7" disabled style="width:20px" maxlength="1" /></td>
+			<tr>
+			<tr>
+			<td align="center"><input type="button" id="buttonBox1" value="box1" onclick="take1('box1')" /></td>
+			<td align="center"><input type="button" id="buttonBox2" value="box2" onclick="take1('box2')" /></td>
+			<td align="center"><input type="button" id="buttonBox3" value="box3" onclick="take1('box3')" /></td>
+			<tr>
+			<tr>
+			<td></td>
+			<td align="center"><input type="button" id="buttonEval" value="Evaluate" onclick="onButtonSubmitHere()" /></td>
+			<td></td>
+			<tr>
+			<tr>
+			<td></td>
+			<td align="center"><input type="button" id="buttonRestart" value="Restart" onclick="restart()" /></td>
+			<td></td>
+			<tr>
+		</table>
+		<br>
+		<br>
+		<br><div align="center"><textarea id="sysout" rows="1" cols="5" disabled ></textarea>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/mainAI.js"></script>
 	<script type="text/javascript">
 		var allowSys = false;
 		var currActive = '';
@@ -92,35 +121,6 @@
 			updateBoxes();
 		}
 	</script>
-	
-	<div id="opArea">
-		<table border="0" align="center">
-			<tr>
-			<td align="center"><input type="text" id="box1" value="3" disabled style="width:20px" maxlength="1" /></td>
-			<td align="center"><input type="text" id="box2" value="5" disabled style="width:20px" maxlength="1" /></td>
-			<td align="center"><input type="text" id="box3" value="7" disabled style="width:20px" maxlength="1" /></td>
-			<tr>
-			<tr>
-			<td align="center"><input type="button" id="buttonBox1" value="box1" onclick="take1('box1')" /></td>
-			<td align="center"><input type="button" id="buttonBox2" value="box2" onclick="take1('box2')" /></td>
-			<td align="center"><input type="button" id="buttonBox3" value="box3" onclick="take1('box3')" /></td>
-			<tr>
-			<tr>
-			<td></td>
-			<td align="center"><input type="button" id="buttonEval" value="Evaluate" onclick="onButtonSubmitHere()" /></td>
-			<td></td>
-			<tr>
-			<tr>
-			<td></td>
-			<td align="center"><input type="button" id="buttonRestart" value="Restart" onclick="restart()" /></td>
-			<td></td>
-			<tr>
-		</table>
-		<br>
-		<br>
-		<br><div align="center"><textarea id="sysout" rows="1" cols="5" disabled ></textarea>
-		</div>
-	</div>
 
     ]]>
   </Content>
