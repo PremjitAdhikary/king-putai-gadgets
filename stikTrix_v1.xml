@@ -4,7 +4,7 @@
   <Content type="html">
     <![CDATA[
 	
-	<script type="text/javascript" src="js/mainAI.js"></script>
+	<script type="text/javascript" src="/js/mainAI.js"></script>
 	<script type="text/javascript">
 		var allowSys = false;
 		var currActive = '';
