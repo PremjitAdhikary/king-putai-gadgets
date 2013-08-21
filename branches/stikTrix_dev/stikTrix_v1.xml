@@ -29,8 +29,6 @@
 		</table>
 		<br>
 		<br>
-		<!--br><div align="center"><textarea id="sysout" rows="1" cols="5" disabled ></textarea>
-		</div-->
 	</div>
 	
 	<script type="text/javascript" src="//king-putai-gadgets.googlecode.com/svn/branches/stikTrix_dev/js/mainAI.js"></script>
