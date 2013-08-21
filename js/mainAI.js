@@ -10,7 +10,7 @@ var winConditions = {
 	top3  : "356"
 };
 
-function processMove(move){alert('in AI for: '+move);
+function processMove(move){
 	var result = "";
 	var formattedMove = formatMove(move);
 	//sysout('formattedMove>'+formattedMove);
