@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript" src="js/mainAI.js"></script>
+	<script type="text/javascript">
+		function onButtonSubmitHere(){
+			var move = document.getElementById('box1').value;
+			var result = processMove(move);
+			document.getElementById('boxresult').value = result;
+		}
+		function onButtonSubmitClear(){
+			document.getElementById('sysout').value = '';
+		}
+		function onButtonSubmit3(){
+			for(var i=0; i<=3; i++)
+				for(var j=0; j<=5; j++)
+					for(var k=0; k<=7; k++){
+						var move = i+''+j+''+k;
+						var result = processMove(move);
+						sysout(move+': '+result);
+					}
+		}
+	</script>
+<head>
+</head>
+<body>
+
+	<div id="opArea">
+		<input type="text" id="box1" />
+		<input type="text" id="box2" disabled />
+		<input type="text" id="box3" disabled /><br>
+		<input type="button" value="Evaluate" onclick="onButtonSubmitHere()" /><br>
+		<input type="text" id="boxresult"  disabled />
+		<br>Output<br><textarea id="sysout"  rows="10" cols="50" disabled ></textarea><br>
+		<input type="button" value="Clear" onclick="onButtonSubmitClear()" /><br>
+		<input type="button" value="Strat3" onclick="onButtonSubmit3()" /><br>
+	</div>
+
+</body>
+</html>

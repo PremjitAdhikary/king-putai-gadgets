@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript" src="/js/mainAI.js"></script>
+	<script type="text/javascript">
+		var currActive = '';
+		var box1Val = '3';
+		var box2Val = '5';
+		var box3Val = '7';
+		function activate(box){
+			if(currActive == box)
+				return;
+			disableAll();
+			document.getElementById(box).disabled = false;
+			currActive = box;
+		}
+		function validate(box){
+			if(box == 'box1'){
+				if(parseInt(document.getElementById('box1').value) >= box1Val 
+					|| parseInt(document.getElementById('box1').value) < 0
+					|| document.getElementById('box1').value == '-'){
+					document.getElementById('box1').value = box1Val;
+					return true;
+				}
+			}
+			if(box == 'box2'){
+				if(parseInt(document.getElementById('box2').value) >= box2Val 
+					|| parseInt(document.getElementById('box2').value) < 0
+					|| document.getElementById('box2').value == '-'){
+					document.getElementById('box2').value = box2Val;
+					return true;
+				}
+			}
+			if(box == 'box3'){
+				if(parseInt(document.getElementById('box3').value) >= box3Val 
+					|| parseInt(document.getElementById('box3').value) < 0
+					|| document.getElementById('box3').value == '-'){
+					document.getElementById('box3').value = box3Val;
+					return true;
+				}
+			}
+			return false;
+		}
+		function disableAll(){
+			document.getElementById('box1').disabled = true;
+			document.getElementById('box1').value = box1Val;
+			document.getElementById('box2').disabled = true;
+			document.getElementById('box2').value = box2Val;
+			document.getElementById('box3').disabled = true;
+			document.getElementById('box3').value = box3Val;
+		}
+		function disableButtons(){
+			document.getElementById('buttonBox1').disabled = true;
+			document.getElementById('buttonBox2').disabled = true;
+			document.getElementById('buttonBox3').disabled = true;
+			document.getElementById('buttonEval').disabled = true;
+		}
+		function enableButtons(){
+			currActive = '';
+			document.getElementById('buttonBox1').disabled = false;
+			document.getElementById('buttonBox2').disabled = false;
+			document.getElementById('buttonBox3').disabled = false;
+			document.getElementById('buttonEval').disabled = false;
+		}
+		function onButtonSubmitHere(){
+			if(validate(currActive) == true){
+				//sysout('validated');
+				return;
+			}
+			box1Val = document.getElementById('box1').value;
+			box2Val = document.getElementById('box2').value;
+			box3Val = document.getElementById('box3').value;
+			disableAll();
+			disableButtons();
+			if(checkWinCondition()){
+				alert('You win');
+				onButtonSubmitClear();
+			} else
+				setTimeout( "callAI();", 1250); 
+		}
+		function callAI(){
+			var result = processMove(box1Val+''+box2Val+''+box3Val);
+			sysout(result);
+			var oldVal = result.split('-')[0];
+			var newVal = result.split('-')[1];
+			if(box1Val==oldVal){
+				box1Val = newVal;
+				document.getElementById('box1').value = newVal;
+			} else if(box2Val==oldVal){
+				box2Val = newVal;
+				document.getElementById('box2').value = newVal;
+			} else if(box3Val==oldVal){
+				box3Val = newVal;
+				document.getElementById('box3').value = newVal;
+			}
+			if(!checkWinCondition())
+				enableButtons();
+			else {
+				alert('You lost');
+				onButtonSubmitClear();
+			}
+		}
+		function checkWinCondition(){
+			return ( (box1Val==0 && box2Val==0 && box3Val==1)
+				|| (box1Val==0 && box3Val==0 && box2Val==1)
+				|| (box3Val==0 && box2Val==0 && box1Val==1) );
+		}
+		function onButtonSubmitClear(){
+			document.getElementById('sysout').value = '';
+		}
+		function onButtonSubmit3(){
+			for(var i=0; i<=3; i++)
+				for(var j=0; j<=5; j++)
+					for(var k=0; k<=7; k++){
+						var move = i+''+j+''+k;
+						var result = processMove(move);
+						sysout(move+': '+result);
+					}
+		}
+	</script>
+<head>
+</head>
+<body>
+
+	<div id="opArea">
+		<table border="0" align="center">
+			<tr>
+			<td align="center"><input type="text" id="box1" value="3" disabled style="width:20px" maxlength="1" /></td>
+			<td align="center"><input type="text" id="box2" value="5" disabled style="width:20px" maxlength="1" /></td>
+			<td align="center"><input type="text" id="box3" value="7" disabled style="width:20px" maxlength="1" /></td>
+			<tr>
+			<tr>
+			<td align="center"><input type="button" id="buttonBox1" value="box1" onclick="activate('box1')" /></td>
+			<td align="center"><input type="button" id="buttonBox2" value="box2" onclick="activate('box2')" /></td>
+			<td align="center"><input type="button" id="buttonBox3" value="box3" onclick="activate('box3')" /></td>
+			<tr>
+			<tr>
+			<td></td>
+			<td align="center"><input type="button" id="buttonEval" value="Evaluate" onclick="onButtonSubmitHere()" /></td>
+			<td></td>
+			<tr>
+		</table>
+		
+		
+		<br>
+		<!-- input type="button" value="Evaluate" onclick="onButtonSubmitHere()" /><br>
+		<input type="text" id="boxresult"  disabled /-->
+		
+		
+		<br>
+		<br>
+		<br>Output<br><textarea id="sysout"  rows="10" cols="50" disabled ></textarea><br>
+		<!--input type="button" value="Clear" onclick="onButtonSubmitClear()" /><br>
+		<input type="button" value="Strat3" onclick="onButtonSubmit3()" /><br-->
+	</div>
+
+</body>
+</html>
