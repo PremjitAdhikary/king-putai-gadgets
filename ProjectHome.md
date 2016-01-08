@@ -1,0 +1,1 @@
+Putting my programming knowledge to selfish use
