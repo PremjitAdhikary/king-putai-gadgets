@@ -48,9 +48,9 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardcontinued/Artwork_LN_01.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardcontinued/Artwork_LN_01.jpg','Spawn Again and Again')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardcontinued/Artwork_LN_02.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardcontinued/Artwork_LN_02.jpg','Kurosaki Ichigo')">
 
-		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_16.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_16.jpg','Tyrael from Diablo')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.jpg','Joker Again')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.jpg','Batman v Superman')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_16.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_16.JPG','Tyrael from Diablo')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.JPG','Joker Again')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.JPG','Batman v Superman')">
 	</div>
 </div>
 

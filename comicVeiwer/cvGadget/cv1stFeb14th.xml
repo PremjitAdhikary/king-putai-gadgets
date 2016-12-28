@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="The Knot - Comic Viewer" />
+  <Content type="html">
+    <![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script type="text/javascript">
+//to hold the current page number
+var bookmark = 0;
+//holds the urls for all the pages, set them up as the order of pages to appear
+var pageUrls = new Array(
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p27.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p28.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p29.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p30.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p31.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p32.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p33.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p34.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p35.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p36.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p37.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p38.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p39.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p40.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p41.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p42.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p43.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p44.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p45.tif",
+	"https://sites.google.com/site/kingputaistoragea01/home/files/p46.tif"
+);
+function prev(){
+	if(bookmark!=0){
+		bookmark--;
+		updateScreen();
+	}
+	//else{alert('start>'+bookmark);}
+}
+function next(){
+	if(bookmark!=(pageUrls.length-1)){
+		bookmark++;
+		updateScreen();
+	}
+	//else{alert('end>'+bookmark);}
+}
+function gotoPage(whichTB){
+	//which page togo
+	var gohere = (whichTB == 1)?document.getElementById('goTxt').value:document.getElementById('goTxtBelow').value;
+	if(gohere>0 && gohere<pageUrls.length){
+		bookmark=gohere;
+		updateScreen();
+	}
+}
+function gotoFirst(){
+	//go to cover
+	bookmark=0;
+	updateScreen();
+}
+function gotoLast(){
+	//go to end
+	bookmark=pageUrls.length-1;
+	updateScreen();
+}
+function updateScreen(){
+	document.getElementById('screen').style.backgroundImage='url('+pageUrls[bookmark]+')';
+	document.getElementById('goTxt').value=bookmark;
+	document.getElementById('goTxtBelow').value=bookmark;
+}
+</script>
+<style type="text/css">
+	body {margin:0; padding:0;}
+	#enclose {width: 940px; height: 1260px;}
+	#screen {width:840px; height:1260px; padding:0px; float:left; background:#000000
+		url(https://sites.google.com/site/kingputaistoragea01/home/files/p27.tif) no-repeat center; }
+	#prev {width:50px; height:1260px; padding:0px; float:left; }
+	#next {width:50px; height:1260px; padding:0px; float:left; }
+	#goto {width:940px; padding:0px; text-align:center; color:white; background:#000000}
+	#gotobelow {width:940px; padding:0px; text-align:center; color:white; background:#000000}
+</style>
+<div id="goto">
+	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="Prev" onclick="prev()">
+	Page 
+	<input type="text" name="goTxt" id="goTxt" maxlength="2" value="0" style="width:20px;">
+	<input type="button" value="Go" onclick="gotoPage(1)">
+	<input type="button" value="Next" onclick="next()">
+	<input type="button" value="Last" onclick="gotoLast()"><br>To Navigate: use buttons/sidebars or text+'Go' button
+</div>
+<div id="enclose">
+	<div id="prev"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/prev.jpg" onclick="prev()"></div>
+	<div id="screen"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/transparent.gif" 
+			style="width:840px; height:1260px;"></div>   
+	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" onclick="next()"></div>
+</div>
+<div id="gotobelow">
+	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="Prev" onclick="prev()">
+	Page 
+	<input type="text" name="goTxt" id="goTxtBelow" maxlength="2" value="0" style="width:20px;">
+	<input type="button" value="Go" onclick="gotoPage(2)">
+	<input type="button" value="Next" onclick="next()">
+	<input type="button" value="Last" onclick="gotoLast()">
+</div>
+    ]]>
+  </Content>
+</Module>
