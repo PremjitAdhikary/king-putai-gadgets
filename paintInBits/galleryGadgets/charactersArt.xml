@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Characters" />
+  <Content type="html">
+    <![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script type="text/javascript">
+function change(url,txt) {
+	document.getElementById('large').style.backgroundImage='url('+url+')';
+	document.getElementById('desc').innerHTML=''+txt+'';
+}
+</script>
+<style type="text/css">
+	body {margin:0; padding:0;}
+	#enclose {width: 810px; height: 910px; float:left;}
+	#large {
+	width:800px; height:889px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2001%20-%20Ichigo.jpg) no-repeat center; }
+	/* The width and height values should be equal to the largest width and height values in your images. */
+	#thumbs {width:117px; height:935px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+	/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
+	#inner {padding:5px;}
+	img {width:80px; margin:5px; display:block;}
+	#desc {width:810px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+</style>
+<div id="enclose">
+	<div id="large"></div>   
+	<div id="desc">Ichigo</div> 
+</div>
+<div id="thumbs">
+	<div id="inner">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2001%20-%20Ichigo.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2001%20-%20Ichigo.jpg','Ichigo')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2002%20-%20tintin.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2002%20-%20tintin.jpg','Tinin and Snowy')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2003%20-%20mogli.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2003%20-%20mogli.jpg','Mogli')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2004%20-%20Asterix.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2004%20-%20Asterix.jpg','Asterix and Obelix')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2005%20-%20Archie.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2005%20-%20Archie.jpg','Archie and Gals')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2006%20-%20Calvin.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2006%20-%20Calvin.jpg','Calvin and Hobbes')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2007%20-%20samJack.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2007%20-%20samJack.jpg','Samurai Jack')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2008%20-%20Aang.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetch/Day%2008%20-%20Aang.jpg','Avatar Aang')">
+
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2009%20-%20Naruto.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2009%20-%20Naruto.jpg','Naruto')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2010%20-%20kusanagi%20c.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2010%20-%20kusanagi%20c.jpg','Motoko Kusanagi')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2011%20-%20fullMetal.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2011%20-%20fullMetal.jpg','Elric brothers')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2012%20-%20vagabond.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2012%20-%20vagabond.jpg','Miyamoto Mushashi')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2013%20-%20phantom.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2013%20-%20phantom.jpg','Phantom')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2014%20-%20afro.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2014%20-%20afro.jpg','Afro Samurai')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2015%20-%20scorpion.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchcontinued/Day%2015%20-%20scorpion.jpg','Scorpion')">
+
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2016%20-%20batman%20superman.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2016%20-%20batman%20superman.jpg','Batman v Superman')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2017%20-%20spawn%20RED.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2017%20-%20spawn%20RED.jpg','Spawn')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2018%20-%20wolverine.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2018%20-%20wolverine.jpg','Wolverine')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2019%20-%20arthus%20v1.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2019%20-%20arthus%20v1.jpg','Lich King')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2020%20-%20bonnie.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2020%20-%20bonnie.jpg','Bonnie')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2020%20-%20putai.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/projectetchstillcontinued/Day%2020%20-%20putai.jpg','Putai')">
+	</div>
+</div>
+
+    ]]>
+  </Content>
+</Module>

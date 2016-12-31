@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Miracle Daily" />
+  <Content type="html">
+    <![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<style type="text/css">
+	body {margin:0; padding:0;}
+	#outer {width:920px; height:305px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+	/* i.e. width 880px inner width + 15px padding + 17px scrollbar width */
+	#inner {padding:5px;}
+	img {width:880px; margin:5px; display:block;}
+</style>
+<div id="outer">
+	<div id="inner">
+		<img src="https://sites.google.com/site/paintinbits/writeups/seconddigitalcomic/MiracleDaily.jpg">
+	</div>
+</div>
+
+    ]]>
+  </Content>
+</Module>
