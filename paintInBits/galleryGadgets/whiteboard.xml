@@ -52,7 +52,7 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_17c.JPG','Joker Again')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.JPG" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_18c.JPG','Batman v Superman')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_19.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_19.jpg','Ichigo Again')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_C_01_e_r.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_C_01_e_r.jpg','Assassin's Creed')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_C_01_e_r.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/whiteboardstillcontinued/Artwork_C_01_e_r.jpg','Assassins Creed')">
 	</div>
 </div>
 
