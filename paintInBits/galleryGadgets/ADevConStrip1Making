@@ -29,12 +29,12 @@ function change(url,txt) {
 <div id="thumbs">
 	<div id="inner">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-1-pencils.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-1-pencils.jpg','Step 1 - Pencils or Outline')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-2-base" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-2-base.jpg','Step 2 - Base colors for the Characters')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-3-bgBase" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-3-bgBase','Step 3 - Layout the Background')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-4-bgDetails" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-4-bgDetails','Step 4 - Detail out the Background')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails','Step 5 - Lights and Shadows')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders','Step 6 - Finishing touch')">
-		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6','Step 7 - Add Text')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-2-base.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-2-base.jpg','Step 2 - Base colors for the Characters')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-3-bgBase.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-3-bgBase.jpg','Step 3 - Layout the Background')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-4-bgDetails.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-4-bgDetails.jpg','Step 4 - Detail out the Background')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails.jpg','Step 5 - Lights and Shadows')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders.jpg','Step 6 - Finishing touch')">
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6.jpg','Step 7 - Add Text')">
 	</div>
 </div>
     ]]>
