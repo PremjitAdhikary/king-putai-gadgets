@@ -16,11 +16,12 @@ function change(url,txt) {
 	#large {
 	width:800px; height:270px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-1-pencils.jpg) no-repeat center; }
 	/* The width and height values should be equal to the largest width and height values in your images. */
-	#thumbs {width:117px; height:310px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+	#thumbs {width:117px; height:315px; background:#000000; overflow-x:hidden; overflow-y:auto; }
 	/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
 	#inner {padding:5px;}
 	img {width:80px; margin:5px; display:block;}
 	#desc {width:810px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
+	#paddingtext {width:80px; margin:5px; display:block; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
 </style>
 <div id="enclose">
 	<div id="large"></div>   
@@ -35,6 +36,7 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-5-lightDetails.jpg','Step 5 - Lights and Shadows')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-6-softenBorders.jpg','Step 6 - Finishing touch')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6.jpg','Step 7 - Add Text')">
+		<div id="paddingtext">Click on the thumbnails to go through the art process</div>
 	</div>
 </div>
     ]]>
