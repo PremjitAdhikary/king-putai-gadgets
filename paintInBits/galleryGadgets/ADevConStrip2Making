@@ -22,7 +22,6 @@ function change(url,txt) {
 	img {width:80px; margin:5px; display:block;}
 	#desc {width:410px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
 </style>
-<div style="background:#000000">
 <div id="enclose">
 	<div id="large"></div>   
 	<div id="desc">Inspiration from the Movie</div> 
@@ -37,7 +36,6 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-05.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-05.jpg','Step 5 - Background')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-06.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-06.jpg','Step 6 - Background Details')">
 	</div>
-</div>
 </div>
     ]]>
   </Content>
