@@ -63,7 +63,7 @@ function updateScreen(){
 	#gotobelow {width:900px; padding:0px; text-align:center; color:white; background:#000000}
 </style>
 <div id="goto">
-	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="First" onclick="gotoFirst()">
 	<input type="button" value="Prev" onclick="prev()">
 	Page 
 	<input type="text" name="goTxt" id="goTxt" maxlength="2" value="0" style="width:20px;">
@@ -78,7 +78,7 @@ function updateScreen(){
 	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" onclick="next()"></div>
 </div>
 <div id="gotobelow">
-	<input type="button" value="Cover" onclick="gotoFirst()">
+	<input type="button" value="First" onclick="gotoFirst()">
 	<input type="button" value="Prev" onclick="prev()">
 	Page 
 	<input type="text" name="goTxt" id="goTxtBelow" maxlength="2" value="0" style="width:20px;">
