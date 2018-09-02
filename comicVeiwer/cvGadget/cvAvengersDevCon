@@ -72,10 +72,10 @@ function updateScreen(){
 	<input type="button" value="Last" onclick="gotoLast()"><br>To Navigate: use buttons/sidebars or text+'Go' button
 </div>
 <div id="enclose">
-	<div id="prev"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/prev.jpg" onclick="prev()"></div>
+	<div id="prev"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/prev.jpg" height="533" onclick="prev()"></div>
 	<div id="screen"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/transparent.gif" 
 			style="width:800px; height:533px;"></div>   
-	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" onclick="next()"></div>
+	<div id="next"><img src="https://sites.google.com/site/kingputaistoragea01/home/files/next.jpg" height="533" onclick="next()"></div>
 </div>
 <div id="gotobelow">
 	<input type="button" value="First" onclick="gotoFirst()">
