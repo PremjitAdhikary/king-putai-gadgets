@@ -16,13 +16,13 @@ function change(url,txt) {
 	#large {
 	width:400px; height:533px; padding:10px; background:#000000 url(https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-00.jpg) no-repeat center; }
 	/* The width and height values should be equal to the largest width and height values in your images. */
-	#thumbs {width:117px; height:575px; background:#000000; overflow-x:hidden; overflow-y:auto; }
+	#thumbs {width:117px; height:576px; background:#000000; overflow-x:hidden; overflow-y:auto; }
 	/* i.e. width 80px thumbnails width + 15px padding + 17px scrollbar width */
 	#inner {padding:5px;}
 	img {width:80px; margin:5px; display:block;}
 	#desc {width:410px; padding:5px 0; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
-	#paddingtext {width:80px; margin:5px; display:block; background:#000000; font:10pt Arial; color:#FFFFFF; text-align:center;}
 </style>
+<div style="background:#000000">
 <div id="enclose">
 	<div id="large"></div>   
 	<div id="desc">Inspiration from the Movie</div> 
@@ -35,8 +35,9 @@ function change(url,txt) {
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-03.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-03.jpg','Step 3 - Color')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-04.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-04.jpg','Step 4 - Lights and Shadows')">
 		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-05.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-05.jpg','Step 5 - Background')">
-		<div id="paddingtext">Click on the thumbnails to go through the art process</div>
+		<img src="https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-06.jpg" onclick="change('https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-strange-06.jpg','Step 6 - Background Details')">
 	</div>
+</div>
 </div>
     ]]>
   </Content>
