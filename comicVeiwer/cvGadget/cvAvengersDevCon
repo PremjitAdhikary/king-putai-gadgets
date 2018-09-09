@@ -12,7 +12,8 @@ var pageUrls = new Array(
 	"https://sites.google.com/site/paintinbits/writeups/thirddigitalcomicthemaking/r-7-v2-complete-step-6.jpg",
   "https://sites.google.com/site/paintinbits/writeups/thirddigitalcomic/r-complete-a.jpg",
   "https://sites.google.com/site/paintinbits/writeups/thirddigitalcomic/r-complete-b.jpg",
-  "https://sites.google.com/site/paintinbits/writeups/thirddigitalcomic/r-7-complete.jpg"
+  "https://sites.google.com/site/paintinbits/writeups/thirddigitalcomic/r-7-complete.jpg",
+  "https://sites.google.com/site/paintinbits/writeups/thirddigitalcomic/r-6-complete.jpg"
 );
 function prev(){
 	if(bookmark!=0){
